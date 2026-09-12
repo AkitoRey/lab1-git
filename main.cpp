@@ -59,3 +59,4 @@ int main() {
     } while (choice != 0);
     return 0;
 }
+// изменение 1 (из lab1-git)
