@@ -15,6 +15,11 @@ double kgToT(double kg) {
     return kg / 1000.0;
 }
 
+// Перевод тонн в центнеры
+double tToCwt(double t) {
+    return t * 10.0;
+}
+
 // ===== Главная функция: меню =====
 int main() {
     int choice;
@@ -23,6 +28,7 @@ int main() {
         cout << "\n=== Вариант 77: конвертер массы ===\n";
         cout << "1. Тонны -> килограммы\n";
         cout << "2. Килограммы -> тонны\n";
+        cout << "3. Тонны -> центнеры\n";
         cout << "0. Выход\n";
         cout << "Выберите пункт: ";
         cin >> choice;
@@ -36,6 +42,11 @@ int main() {
                 cout << "Введите массу в килограммах: ";
                 cin >> value;
                 cout << "Масса = " << kgToT(value) << " т\n";
+                break;
+            case 3:
+                cout << "Введите массу в тоннах: ";
+                cin >> value;
+                cout << "Масса = " << tToCwt(value) << " ц\n";
                 break;
             case 0:
                 cout << "Работа завершена.\n";
