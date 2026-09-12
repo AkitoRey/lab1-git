@@ -60,3 +60,4 @@ int main() {
     return 0;
 }
 // изменение 1 (из lab1-git)
+// изменение 2 (из lab1-copy)
